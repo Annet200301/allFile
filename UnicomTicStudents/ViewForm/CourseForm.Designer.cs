@@ -35,7 +35,6 @@
             this.btnDeleteCourse = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.exitBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
@@ -43,7 +42,7 @@
             // 
             // NameCtextBox
             // 
-            this.NameCtextBox.Location = new System.Drawing.Point(108, 101);
+            this.NameCtextBox.Location = new System.Drawing.Point(112, 26);
             this.NameCtextBox.Name = "NameCtextBox";
             this.NameCtextBox.Size = new System.Drawing.Size(153, 20);
             this.NameCtextBox.TabIndex = 1;
@@ -53,7 +52,7 @@
             // courseDataGridView
             // 
             this.courseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.courseDataGridView.Location = new System.Drawing.Point(11, 200);
+            this.courseDataGridView.Location = new System.Drawing.Point(27, 290);
             this.courseDataGridView.Name = "courseDataGridView";
             this.courseDataGridView.Size = new System.Drawing.Size(247, 222);
             this.courseDataGridView.TabIndex = 2;
@@ -71,7 +70,7 @@
             // 
             // btnUpdateCourse
             // 
-            this.btnUpdateCourse.Location = new System.Drawing.Point(82, 7);
+            this.btnUpdateCourse.Location = new System.Drawing.Point(84, 7);
             this.btnUpdateCourse.Name = "btnUpdateCourse";
             this.btnUpdateCourse.Size = new System.Drawing.Size(75, 57);
             this.btnUpdateCourse.TabIndex = 3;
@@ -94,7 +93,7 @@
             this.panel1.Controls.Add(this.btnUpdateCourse);
             this.panel1.Controls.Add(this.btnAddCourse);
             this.panel1.Controls.Add(this.btnDeleteCourse);
-            this.panel1.Location = new System.Drawing.Point(15, 12);
+            this.panel1.Location = new System.Drawing.Point(28, 193);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(246, 73);
             this.panel1.TabIndex = 4;
@@ -103,32 +102,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 102);
+            this.label2.Location = new System.Drawing.Point(12, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Course Name";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // exitBtn
-            // 
-            this.exitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.exitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.exitBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exitBtn.Location = new System.Drawing.Point(375, 11);
-            this.exitBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(27, 20);
-            this.exitBtn.TabIndex = 5;
-            this.exitBtn.Text = "✖";
-            this.exitBtn.UseVisualStyleBackColor = false;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 155);
+            this.label1.Location = new System.Drawing.Point(12, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(198, 18);
             this.label1.TabIndex = 6;
@@ -139,16 +124,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 430);
+            this.ClientSize = new System.Drawing.Size(700, 537);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.courseDataGridView);
             this.Controls.Add(this.NameCtextBox);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CourseForm";
-            this.Text = "CourseForm";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.CourseForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -165,7 +149,6 @@
         private System.Windows.Forms.Button btnDeleteCourse;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Label label1;
     }
 }

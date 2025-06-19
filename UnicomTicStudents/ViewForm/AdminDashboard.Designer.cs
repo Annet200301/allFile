@@ -32,17 +32,17 @@
             this.exitBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.CourseManagement = new System.Windows.Forms.Button();
-            this.adminFormPanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.adminAdminBtn = new System.Windows.Forms.Button();
+            this.adminTimetblBtn = new System.Windows.Forms.Button();
+            this.adminStaffBtn = new System.Windows.Forms.Button();
+            this.adminlectureBtn = new System.Windows.Forms.Button();
+            this.adminStudentBtn = new System.Windows.Forms.Button();
+            this.adminRegisterBtn = new System.Windows.Forms.Button();
+            this.adminMarksBtn = new System.Windows.Forms.Button();
+            this.adminExamBtn = new System.Windows.Forms.Button();
+            this.adminCourseBtn = new System.Windows.Forms.Button();
+            this.adminAttendenceBtn = new System.Windows.Forms.Button();
+            this.AdminPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(903, 50);
+            this.panel1.Size = new System.Drawing.Size(903, 52);
             this.panel1.TabIndex = 0;
             // 
             // exitBtn
@@ -84,138 +84,138 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.CourseManagement);
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.adminAdminBtn);
+            this.panel2.Controls.Add(this.adminTimetblBtn);
+            this.panel2.Controls.Add(this.adminStaffBtn);
+            this.panel2.Controls.Add(this.adminlectureBtn);
+            this.panel2.Controls.Add(this.adminStudentBtn);
+            this.panel2.Controls.Add(this.adminRegisterBtn);
+            this.panel2.Controls.Add(this.adminMarksBtn);
+            this.panel2.Controls.Add(this.adminExamBtn);
+            this.panel2.Controls.Add(this.adminCourseBtn);
+            this.panel2.Controls.Add(this.adminAttendenceBtn);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 50);
+            this.panel2.Location = new System.Drawing.Point(0, 52);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(207, 539);
+            this.panel2.Size = new System.Drawing.Size(203, 537);
             this.panel2.TabIndex = 1;
             // 
-            // CourseManagement
+            // adminAdminBtn
             // 
-            this.CourseManagement.Location = new System.Drawing.Point(0, 281);
-            this.CourseManagement.Name = "CourseManagement";
-            this.CourseManagement.Size = new System.Drawing.Size(178, 39);
-            this.CourseManagement.TabIndex = 0;
-            this.CourseManagement.Text = "ATENDENCE  MANAGEMENT";
-            this.CourseManagement.UseVisualStyleBackColor = true;
-            this.CourseManagement.Click += new System.EventHandler(this.CourseManagement_Click);
+            this.adminAdminBtn.Location = new System.Drawing.Point(0, 191);
+            this.adminAdminBtn.Name = "adminAdminBtn";
+            this.adminAdminBtn.Size = new System.Drawing.Size(178, 39);
+            this.adminAdminBtn.TabIndex = 0;
+            this.adminAdminBtn.Text = "ADMIN  MANAGEMENT";
+            this.adminAdminBtn.UseVisualStyleBackColor = true;
+            this.adminAdminBtn.Click += new System.EventHandler(this.adminAdminBtn_Click);
             // 
-            // adminFormPanel
+            // adminTimetblBtn
             // 
-            this.adminFormPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.adminFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.adminFormPanel.Location = new System.Drawing.Point(207, 50);
-            this.adminFormPanel.Name = "adminFormPanel";
-            this.adminFormPanel.Size = new System.Drawing.Size(696, 539);
-            this.adminFormPanel.TabIndex = 2;
-            this.adminFormPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.adminFormPanel_Paint);
+            this.adminTimetblBtn.Location = new System.Drawing.Point(0, 236);
+            this.adminTimetblBtn.Name = "adminTimetblBtn";
+            this.adminTimetblBtn.Size = new System.Drawing.Size(178, 39);
+            this.adminTimetblBtn.TabIndex = 0;
+            this.adminTimetblBtn.Text = "TIMETABLE MANAGEMENT";
+            this.adminTimetblBtn.UseVisualStyleBackColor = true;
+            this.adminTimetblBtn.Click += new System.EventHandler(this.adminTimetblBtn_Click);
             // 
-            // button1
+            // adminStaffBtn
             // 
-            this.button1.Location = new System.Drawing.Point(0, 56);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "STUDENT MANAGEMENT";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.CourseManagement_Click);
+            this.adminStaffBtn.Location = new System.Drawing.Point(0, 146);
+            this.adminStaffBtn.Name = "adminStaffBtn";
+            this.adminStaffBtn.Size = new System.Drawing.Size(178, 39);
+            this.adminStaffBtn.TabIndex = 0;
+            this.adminStaffBtn.Text = "STAFF  MANAGEMENT";
+            this.adminStaffBtn.UseVisualStyleBackColor = true;
+            this.adminStaffBtn.Click += new System.EventHandler(this.adminStaffBtn_Click);
             // 
-            // button2
+            // adminlectureBtn
             // 
-            this.button2.Location = new System.Drawing.Point(0, 101);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(178, 39);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "LECTURER MANAGEMENT";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.CourseManagement_Click);
+            this.adminlectureBtn.Location = new System.Drawing.Point(0, 101);
+            this.adminlectureBtn.Name = "adminlectureBtn";
+            this.adminlectureBtn.Size = new System.Drawing.Size(178, 39);
+            this.adminlectureBtn.TabIndex = 0;
+            this.adminlectureBtn.Text = "LECTURER MANAGEMENT";
+            this.adminlectureBtn.UseVisualStyleBackColor = true;
+            this.adminlectureBtn.Click += new System.EventHandler(this.adminlectureBtn_Click);
             // 
-            // button3
+            // adminStudentBtn
             // 
-            this.button3.Location = new System.Drawing.Point(0, 146);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(178, 39);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "STAFF  MANAGEMENT";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.CourseManagement_Click);
+            this.adminStudentBtn.Location = new System.Drawing.Point(0, 56);
+            this.adminStudentBtn.Name = "adminStudentBtn";
+            this.adminStudentBtn.Size = new System.Drawing.Size(178, 39);
+            this.adminStudentBtn.TabIndex = 0;
+            this.adminStudentBtn.Text = "STUDENT MANAGEMENT";
+            this.adminStudentBtn.UseVisualStyleBackColor = true;
+            this.adminStudentBtn.Click += new System.EventHandler(this.adminStudentBtn_Click);
             // 
-            // button4
+            // adminRegisterBtn
             // 
-            this.button4.Location = new System.Drawing.Point(0, 236);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(178, 39);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "TIMETABLE MANAGEMENT";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.CourseManagement_Click);
+            this.adminRegisterBtn.Location = new System.Drawing.Point(0, 11);
+            this.adminRegisterBtn.Name = "adminRegisterBtn";
+            this.adminRegisterBtn.Size = new System.Drawing.Size(178, 39);
+            this.adminRegisterBtn.TabIndex = 0;
+            this.adminRegisterBtn.Text = "ADD REGISTERS ACCOUNT";
+            this.adminRegisterBtn.UseVisualStyleBackColor = true;
+            this.adminRegisterBtn.Click += new System.EventHandler(this.adminRegisterBtn_Click);
             // 
-            // button5
+            // adminMarksBtn
             // 
-            this.button5.Location = new System.Drawing.Point(0, 372);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(178, 39);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "EXAMS  MANAGEMENT";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.CourseManagement_Click);
+            this.adminMarksBtn.Location = new System.Drawing.Point(0, 417);
+            this.adminMarksBtn.Name = "adminMarksBtn";
+            this.adminMarksBtn.Size = new System.Drawing.Size(178, 39);
+            this.adminMarksBtn.TabIndex = 0;
+            this.adminMarksBtn.Text = "MARKS   MANAGEMENT";
+            this.adminMarksBtn.UseVisualStyleBackColor = true;
+            this.adminMarksBtn.Click += new System.EventHandler(this.adminMarksBtn_Click);
             // 
-            // button6
+            // adminExamBtn
             // 
-            this.button6.Location = new System.Drawing.Point(0, 191);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(178, 39);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "ADMIN  MANAGEMENT";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.CourseManagement_Click);
+            this.adminExamBtn.Location = new System.Drawing.Point(0, 372);
+            this.adminExamBtn.Name = "adminExamBtn";
+            this.adminExamBtn.Size = new System.Drawing.Size(178, 39);
+            this.adminExamBtn.TabIndex = 0;
+            this.adminExamBtn.Text = "EXAMS  MANAGEMENT";
+            this.adminExamBtn.UseVisualStyleBackColor = true;
+            this.adminExamBtn.Click += new System.EventHandler(this.adminExamBtn_Click);
             // 
-            // button7
+            // adminCourseBtn
             // 
-            this.button7.Location = new System.Drawing.Point(0, 417);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(178, 39);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "MARKS   MANAGEMENT";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.CourseManagement_Click);
+            this.adminCourseBtn.Location = new System.Drawing.Point(0, 326);
+            this.adminCourseBtn.Name = "adminCourseBtn";
+            this.adminCourseBtn.Size = new System.Drawing.Size(178, 39);
+            this.adminCourseBtn.TabIndex = 0;
+            this.adminCourseBtn.Text = "COURSE  MANAGEMENT";
+            this.adminCourseBtn.UseVisualStyleBackColor = true;
+            this.adminCourseBtn.Click += new System.EventHandler(this.adminCourseBtn_Click);
             // 
-            // button8
+            // adminAttendenceBtn
             // 
-            this.button8.Location = new System.Drawing.Point(0, 11);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(178, 39);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "ADD REGISTERS ACCOUNT";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.CourseManagement_Click);
+            this.adminAttendenceBtn.Location = new System.Drawing.Point(-1, 281);
+            this.adminAttendenceBtn.Name = "adminAttendenceBtn";
+            this.adminAttendenceBtn.Size = new System.Drawing.Size(178, 39);
+            this.adminAttendenceBtn.TabIndex = 0;
+            this.adminAttendenceBtn.Text = "ATENDENCE  MANAGEMENT";
+            this.adminAttendenceBtn.UseVisualStyleBackColor = true;
+            this.adminAttendenceBtn.Click += new System.EventHandler(this.adminAttendenceBtn_Click);
             // 
-            // button9
+            // AdminPanel
             // 
-            this.button9.Location = new System.Drawing.Point(0, 326);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(178, 39);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "COURSE  MANAGEMENT";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.CourseManagement_Click);
+            this.AdminPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AdminPanel.Location = new System.Drawing.Point(203, 52);
+            this.AdminPanel.Name = "AdminPanel";
+            this.AdminPanel.Size = new System.Drawing.Size(700, 537);
+            this.AdminPanel.TabIndex = 2;
+            this.AdminPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AdminPanel_Paint);
             // 
             // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(903, 589);
-            this.Controls.Add(this.adminFormPanel);
+            this.Controls.Add(this.AdminPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -236,16 +236,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button exitBtn;
-        private System.Windows.Forms.Button CourseManagement;
-        private System.Windows.Forms.Panel adminFormPanel;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button adminAttendenceBtn;
+        private System.Windows.Forms.Button adminlectureBtn;
+        private System.Windows.Forms.Button adminStudentBtn;
+        private System.Windows.Forms.Button adminTimetblBtn;
+        private System.Windows.Forms.Button adminStaffBtn;
+        private System.Windows.Forms.Button adminAdminBtn;
+        private System.Windows.Forms.Button adminExamBtn;
+        private System.Windows.Forms.Button adminRegisterBtn;
+        private System.Windows.Forms.Button adminMarksBtn;
+        private System.Windows.Forms.Button adminCourseBtn;
+        private System.Windows.Forms.Panel AdminPanel;
     }
 }

@@ -13,10 +13,13 @@ namespace ADMIN.viewform
 {
     public partial class AdminDashboard : Form
     {
-        public AdminDashboard()
+        private Form2 _form2;
+        public AdminDashboard(Form2 _form)
         {
             InitializeComponent();
-            
+            _form2=_form;
+           
+
         }
 
         private void MainDashBoard_Load(object sender, EventArgs e)
@@ -32,24 +35,17 @@ namespace ADMIN.viewform
 
             if (confirmResult == DialogResult.Yes)
             {
-                this.Close();
+                this.Close(); 
             }
-        }
-
-        private void CourseManagement_Click(object sender, EventArgs e)
-        {
-            CourseForm courseForm = new CourseForm();
-            LoadFormIntoPanel(courseForm);
-            
-        }
+        }      
         private void LoadFormIntoPanel(Form form)
         {
-            if (adminFormPanel.Controls.Count > 0)
+            if (AdminPanel.Controls.Count > 0)
             {
-                Control existingControl = adminFormPanel.Controls[0];
+                Control existingControl = AdminPanel.Controls[0];
 
 
-                adminFormPanel.Controls.Remove(existingControl);
+                AdminPanel.Controls.Remove(existingControl);
                 existingControl.Dispose();
             }
     
@@ -57,11 +53,68 @@ namespace ADMIN.viewform
             form.FormBorderStyle = FormBorderStyle.None;
             form.Dock = DockStyle.Fill;
 
-            adminFormPanel.Controls.Add(form);
+            AdminPanel.Controls.Add(form);
             form.Show();
         }
 
         private void adminFormPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void AdminPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void adminRegisterBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminStudentBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminlectureBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminStaffBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminAdminBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminTimetblBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminAttendenceBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminCourseBtn_Click(object sender, EventArgs e)
+        {
+            CourseForm courseForm = new CourseForm();
+            LoadFormIntoPanel(courseForm);
+
+        }
+
+        private void adminExamBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminMarksBtn_Click(object sender, EventArgs e)
         {
 
         }

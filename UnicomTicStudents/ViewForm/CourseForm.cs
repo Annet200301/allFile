@@ -182,7 +182,7 @@ namespace UnicomTicStudents
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-            SubjectForm subjectForm = new SubjectForm;
+            SubjectForm subjectForm = new SubjectForm();
             subjectForm.ShowDialog();
         }
     }

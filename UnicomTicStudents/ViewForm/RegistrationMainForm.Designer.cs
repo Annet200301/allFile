@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.exitBtn = new System.Windows.Forms.Button();
             this.memberSelectionBtn2 = new System.Windows.Forms.Button();
             this.memberCMB2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,7 +40,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.exitBtn);
             this.panel1.Controls.Add(this.memberSelectionBtn2);
             this.panel1.Controls.Add(this.memberCMB2);
             this.panel1.Controls.Add(this.label3);
@@ -54,20 +52,6 @@
             this.panel1.Size = new System.Drawing.Size(682, 55);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // exitBtn
-            // 
-            this.exitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.exitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.exitBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exitBtn.Location = new System.Drawing.Point(647, 2);
-            this.exitBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(27, 20);
-            this.exitBtn.TabIndex = 5;
-            this.exitBtn.Text = "✖";
-            this.exitBtn.UseVisualStyleBackColor = false;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // memberSelectionBtn2
             // 
@@ -155,7 +139,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox memberCMB2;
         private System.Windows.Forms.Button memberSelectionBtn2;
-        private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Panel registerMainPanel;
     }
 }

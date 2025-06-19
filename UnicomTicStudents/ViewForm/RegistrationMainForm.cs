@@ -25,17 +25,7 @@ namespace ADMIN.viewform
         {
 
         }
-        private void exitBtn_Click(object sender, EventArgs e)
-        {
-            var confirmResult = MessageBox.Show("Are you sure you want to exit?", "Exit Application",
-                                        MessageBoxButtons.YesNo,
-                                        MessageBoxIcon.Question);
-
-            if (confirmResult == DialogResult.Yes)
-            {
-                this.Close();
-            }
-        }
+        
         private void registerMainPanel_Paint(object sender, PaintEventArgs e)
         {
 

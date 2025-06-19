@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UnicomTicStudents;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ADMIN.viewform
@@ -73,12 +74,15 @@ namespace ADMIN.viewform
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            using (AdminDashboard mainDashBoard = new AdminDashboard())
-            {
-                mainDashBoard.ShowDialog();
-            }
-            this.Show();
+            Form2 form = new Form2();
+            AdminDashboard dashboard = new AdminDashboard(form); // ✅ pass the current form
+            form .Hide();
+            dashboard.Show();
+
+
+
+
+
         }
     }
 }
