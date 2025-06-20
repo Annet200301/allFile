@@ -9,6 +9,7 @@ namespace UnicomTicStudents.Services.Iservices
 {
     internal interface IUserService
     {
+
         void RegisterUser(UserDTO dto);
         UserDTO GetByNICAndName(string nic, string name);
         void UpdateUser(UserDTO dto);

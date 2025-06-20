@@ -72,3 +72,10 @@ C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicS
 C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTi.60AE7263.Up2Date
 C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.exe
 C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.pdb
+C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.AdminAdminRegistration.resources
+C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.AdminLecturerRegistration.resources
+C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.AdminStaffRegistration.resources
+C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.AdminStudentRegistration.resources
+C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.LecturerRegistration.resources
+C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.staffRegistration.resources
+C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.StudentRegistration.resources

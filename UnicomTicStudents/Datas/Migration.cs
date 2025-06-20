@@ -28,6 +28,15 @@ namespace UnicomTicStudents.Datas
                     CourseId INTEGER,
                     FOREIGN KEY(CourseId) REFERENCES Courses(Id)
                             );
+                               CREATE TABLE IF NOT EXISTS Users (
+                    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    NIC TEXT NOT NULL,
+                    Name TEXT NOT NULL,
+                    IndexNumber TEXT NOT NULL,
+                    Username TEXT,
+                    Password TEXT,
+                    Role TEXT NOT NULL
+                            );
 ";
                 cmd.ExecuteNonQuery();
             }

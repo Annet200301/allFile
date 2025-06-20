@@ -10,15 +10,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UnicomTicStudents;
+using UnicomTicStudents.Controllers;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ADMIN.viewform
 {
     public partial class LoginForm : Form
     {
+        private readonly UserController _controller;
         public LoginForm()
         {
-            InitializeComponent();
+            InitializeComponent(UserController controller);
+            _controller = controller;
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
@@ -74,8 +77,21 @@ namespace ADMIN.viewform
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string username = usernametxt.Text.Trim();
+            string password = passwordtxt.Text.Trim();
+
+            var user = _controller.Login(username, password);
+
+            if (user != null)
+            {
+                MessageBox.Show($"Welcome {user.Name}! Role: {user.Role}");
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password.");
+            }
             Form2 form = new Form2();
-            AdminDashboard dashboard = new AdminDashboard(form); // ✅ pass the current form
+            AdminDashboard dashboard = new AdminDashboard(form); 
             form .Hide();
             dashboard.Show();
 

@@ -153,11 +153,11 @@
     <Compile Include="ViewForm\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewForm\LecturerRegister.cs">
+    <Compile Include="ViewForm\LecturerRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewForm\LecturerRegister.Designer.cs">
-      <DependentUpon>LecturerRegister.cs</DependentUpon>
+    <Compile Include="ViewForm\LecturerRegistration.Designer.cs">
+      <DependentUpon>LecturerRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewForm\LoginForm.cs">
       <SubType>Form</SubType>
@@ -171,17 +171,17 @@
     <Compile Include="ViewForm\RegistrationMainForm.Designer.cs">
       <DependentUpon>RegistrationMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewForm\StaffRegister.cs">
+    <Compile Include="ViewForm\staffRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewForm\StaffRegister.Designer.cs">
-      <DependentUpon>StaffRegister.cs</DependentUpon>
+    <Compile Include="ViewForm\staffRegistration.Designer.cs">
+      <DependentUpon>staffRegistration.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewForm\StudentRegister.cs">
+    <Compile Include="ViewForm\StudentRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewForm\StudentRegister.Designer.cs">
-      <DependentUpon>StudentRegister.cs</DependentUpon>
+    <Compile Include="ViewForm\StudentRegistration.Designer.cs">
+      <DependentUpon>StudentRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewForm\SubjectForm.cs">
       <SubType>Form</SubType>
@@ -192,14 +192,26 @@
     <EmbeddedResource Include="ViewForm\AboutUmsForm.resx">
       <DependentUpon>AboutUmsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\AdminAdminRegistration.resx">
+      <DependentUpon>AdminAdminRegistration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewForm\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\AdminLecturerRegistration.resx">
+      <DependentUpon>AdminLecturerRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewForm\AdminRegisteringManagementForm.resx">
       <DependentUpon>AdminRegisteringManagementForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewForm\AdminRegistration.resx">
       <DependentUpon>AdminRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\AdminStaffRegistration.resx">
+      <DependentUpon>AdminStaffRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\AdminStudentRegistration.resx">
+      <DependentUpon>AdminStudentRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewForm\Constructorform.resx">
       <DependentUpon>Constructorform.cs</DependentUpon>
@@ -222,8 +234,8 @@
     <EmbeddedResource Include="ViewForm\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewForm\LecturerRegister.resx">
-      <DependentUpon>LecturerRegister.cs</DependentUpon>
+    <EmbeddedResource Include="ViewForm\LecturerRegistration.resx">
+      <DependentUpon>LecturerRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewForm\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -231,11 +243,11 @@
     <EmbeddedResource Include="ViewForm\RegistrationMainForm.resx">
       <DependentUpon>RegistrationMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewForm\StaffRegister.resx">
-      <DependentUpon>StaffRegister.cs</DependentUpon>
+    <EmbeddedResource Include="ViewForm\staffRegistration.resx">
+      <DependentUpon>staffRegistration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewForm\StudentRegister.resx">
-      <DependentUpon>StudentRegister.cs</DependentUpon>
+    <EmbeddedResource Include="ViewForm\StudentRegistration.resx">
+      <DependentUpon>StudentRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewForm\SubjectForm.resx">
       <DependentUpon>SubjectForm.cs</DependentUpon>

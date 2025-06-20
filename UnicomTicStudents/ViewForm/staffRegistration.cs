@@ -8,19 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ADMIN.viewform
+namespace UnicomTicStudents.ViewForm
 {
-    public partial class StaffRegister : Form
+    public partial class staffRegistration : Form
     {
-        public StaffRegister()
+        public staffRegistration()
         {
             InitializeComponent();
-            this.TopLevel = false;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.Dock = DockStyle.Fill;
         }
 
-        private void StaffRegister_Load(object sender, EventArgs e)
+        private void registerBtn_Click(object sender, EventArgs e)
         {
 
         }

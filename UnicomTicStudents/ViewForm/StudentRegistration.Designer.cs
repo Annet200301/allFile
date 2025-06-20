@@ -1,6 +1,6 @@
-﻿namespace ADMIN.viewform
+﻿namespace UnicomTicStudents.ViewForm
 {
-    partial class LecturerRegister
+    partial class StudentRegistration
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(227, 159);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "LECTURER ACCOUNT CREATION";
-            // 
-            // LecturerRegister
+            // StudentRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 330);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "LecturerRegister";
-            this.Text = "LecturerRegister";
-            this.Load += new System.EventHandler(this.LecturerRegister_Load);
+            this.ClientSize = new System.Drawing.Size(668, 387);
+            this.Name = "StudentRegistration";
+            this.Text = "StudentRegistration";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
     }
 }
