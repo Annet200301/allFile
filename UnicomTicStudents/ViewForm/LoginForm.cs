@@ -82,18 +82,41 @@ namespace ADMIN.viewform
 
             var user = _controller.Login(username, password);
 
-            if (user != null)
+            if (user == null)
             {
-                MessageBox.Show($"Welcome {user.Name}! Role: {user.Role}");
+                MessageBox.Show("Invalid credentials.");
+                return;
             }
-            else
+
+            MessageBox.Show($"Welcome {user.Name}! Role: {user.Role}");
+
+            Form dashboard = null;
+
+            switch (user.Role)
             {
-                MessageBox.Show("Invalid username or password.");
+                case UserRoles.Admin:
+                    dashboard = new AdminDashboard();
+                    break;
+                case UserRoles.Student:
+                    dashboard = new StudentDashboardForm(user);
+                    break;
+                case UserRoles.Lecturer:
+                    dashboard = new LecturerDashboardForm(user);
+                    break;
+                case UserRoles.Staff:
+                    dashboard = new StaffDashboardForm(user);
+                    break;
+                default:
+                    dashboard = null;
+                    break;
             }
-            Form2 form = new Form2();
-            AdminDashboard dashboard = new AdminDashboard(form); 
-            form .Hide();
-            dashboard.Show();
+
+            if (dashboard != null)
+            {
+                this.Hide();
+                dashboard.ShowDialog();
+                this.Show();
+            }
 
 
 

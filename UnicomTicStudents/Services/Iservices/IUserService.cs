@@ -14,5 +14,6 @@ namespace UnicomTicStudents.Services.Iservices
         UserDTO GetByNICAndName(string nic, string name);
         void UpdateUser(UserDTO dto);
         UserDTO Login(string username, string password);
+       
     }
 }

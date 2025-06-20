@@ -93,12 +93,6 @@
     <Compile Include="ViewForm\AdminRegisteringManagementForm.Designer.cs">
       <DependentUpon>AdminRegisteringManagementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewForm\AdminRegistration.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewForm\AdminRegistration.Designer.cs">
-      <DependentUpon>AdminRegistration.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewForm\AdminStaffRegistration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,9 +197,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewForm\AdminRegisteringManagementForm.resx">
       <DependentUpon>AdminRegisteringManagementForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ViewForm\AdminRegistration.resx">
-      <DependentUpon>AdminRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewForm\AdminStaffRegistration.resx">
       <DependentUpon>AdminStaffRegistration.cs</DependentUpon>
