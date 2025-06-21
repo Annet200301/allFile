@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UnicomTicStudents.Models.DTOs;
 
 namespace UnicomTicStudents.ViewForm
 {
     public partial class AdminStaffRegistration : Form
     {
-        public AdminStaffRegistration()
+        private readonly UserDTO _user;
+        public AdminStaffRegistration(UserDTO user)
         {
             InitializeComponent();
+            _user = user;   
+        }
+
+        private void AdminStaffRegistration_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -6,19 +6,25 @@ using System.Threading.Tasks;
 using UnicomTicStudents.Models;
 using UnicomTicStudents.Models.DTOs;
 using UnicomTicStudents.Repositories.Irepository;
+using UnicomTicStudents.Services.IServices;
 
 namespace UnicomTicStudents.Controllers
 {
     internal class SubjectController
     {
-        private readonly ISubjectRepository _subjectRepository;
+        private readonly ISubjectServices subjectServices;
 
-        public SubjectController(ISubjectRepository subjectRepository)
+        public SubjectController(ISubjectServices _subjectServices)
         {
-            _subjectRepository = subjectRepository;
+            subjectServices = _subjectServices; 
         }
 
         public void AddSubject(string subjectName, int courseId)
+        {
+            AddSubject(subjectName, courseId, subjectEntity);
+        }
+
+        public void AddSubject(string subjectName, int courseId, SubjectEntity subjectEntity)
         {
             var subjectEntity = new SubjectEntity
             {
@@ -26,12 +32,12 @@ namespace UnicomTicStudents.Controllers
                 CourseId = courseId
             };
 
-            _subjectRepository.AddSubject(subjectEntity);
+            subjectServices.AddSubject(subjectEntity);
         }
 
         public List<SubjectDTO> GetSubjectsByCourseId(int courseId)
         {
-            return _subjectRepository.GetSubjectsByCourseId(courseId);
+            return subjectServices.GetSubjectsByCourseId(courseId);
         }
     }
 }

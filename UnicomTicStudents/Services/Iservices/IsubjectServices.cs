@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using UnicomTicStudents.Models.DTOs;
 
-namespace UnicomTicStudents.Services.Iservices
+namespace UnicomTicStudents.Services.IServices
 {
-    internal class IsubjectServices
+    public interface ISubjectServices
     {
         void AddSubject(SubjectDTO dto);
         void UpdateSubject(SubjectDTO dto);

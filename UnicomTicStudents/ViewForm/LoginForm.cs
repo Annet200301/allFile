@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using UnicomTicStudents;
 using UnicomTicStudents.Controllers;
+using UnicomTicStudents.ViewForm;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ADMIN.viewform
@@ -20,8 +21,8 @@ namespace ADMIN.viewform
         private readonly UserController _controller;
         public LoginForm()
         {
-            InitializeComponent(UserController controller);
-            _controller = controller;
+            InitializeComponent();
+           
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
@@ -101,7 +102,7 @@ namespace ADMIN.viewform
                     dashboard = new StudentDashboardForm(user);
                     break;
                 case UserRoles.Lecturer:
-                    dashboard = new LecturerDashboardForm(user);
+                    dashboard = new AdminLecturerRegistration(user);
                     break;
                 case UserRoles.Staff:
                     dashboard = new StaffDashboardForm(user);
@@ -124,4 +125,4 @@ namespace ADMIN.viewform
 
         }
     }
-}
+}//AdminLecturerRegistration()

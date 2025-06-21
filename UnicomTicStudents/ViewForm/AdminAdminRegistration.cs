@@ -16,5 +16,10 @@ namespace UnicomTicStudents.ViewForm
         {
             InitializeComponent();
         }
+
+        private void AdminAdminRegistration_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

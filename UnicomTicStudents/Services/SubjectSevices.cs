@@ -9,10 +9,11 @@ using UnicomTicStudents.Mappers;
 using UnicomTicStudents.Models.DTOs;
 using UnicomTicStudents.Repositories.Irepository;
 using UnicomTicStudents.Services.Iservices;
+using UnicomTicStudents.Services.IServices;
 
 namespace UnicomTicStudents.Services
 {
-    internal class SubjectSevices: IsubjectServices
+    internal class SubjectSevices: ISubjectServices
     {
         private readonly ISubjectRepository _repository;
 
