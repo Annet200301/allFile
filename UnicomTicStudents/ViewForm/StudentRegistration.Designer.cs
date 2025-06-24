@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(668, 387);
             this.Name = "StudentRegistration";
             this.Text = "StudentRegistration";
+            this.Load += new System.EventHandler(this.StudentRegistration_Load);
             this.ResumeLayout(false);
 
         }

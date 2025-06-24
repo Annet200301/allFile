@@ -64,5 +64,10 @@ namespace UnicomTicStudents.ViewForm
             this.Close();
 
         }
+
+        private void AdminAdminRegistration_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

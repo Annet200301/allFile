@@ -14,6 +14,10 @@ namespace UnicomTicStudents.Services.Iservices
         void DeleteUser(int id);
         UserDTO GetByNICAndName(string nic, string name);
         UserDTO Login(string username, string password);
+<<<<<<< HEAD
         List<UserDTO> GetAllUsers();
+=======
+       
+>>>>>>> aaf16da70d44d4987a8c27562a13b683e3b478f6
     }
 }

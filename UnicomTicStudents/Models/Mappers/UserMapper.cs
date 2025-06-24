@@ -9,8 +9,9 @@ namespace UnicomTicStudents.Models.Mappers
 {
     internal class UserMapper
     {
-        public static UsersEntity ToEntity(UserDTO dto)
+        public static UsersEntity ToEntity(UserDTO dto) => new UsersEntity
         {
+<<<<<<< HEAD
             return new UsersEntity
             {
                 Id = dto.Id,
@@ -20,9 +21,20 @@ namespace UnicomTicStudents.Models.Mappers
                 Role = dto.Role
             };
         }
+=======
+            Id = dto.Id,
+            NIC = dto.NIC,
+            Name = dto.Name,
+            IndexNumber = dto.IndexNumber,
+            Username = dto.Username,
+            Password = dto.Password,
+            Role = dto.Role
+        };
+>>>>>>> aaf16da70d44d4987a8c27562a13b683e3b478f6
 
-        public static UserDTO ToDTO(UsersEntity entity)
+        public static UserDTO ToDTO(UsersEntity entity) => new UserDTO
         {
+<<<<<<< HEAD
             return new UserDTO
             {
                 Id = entity.Id,
@@ -32,5 +44,16 @@ namespace UnicomTicStudents.Models.Mappers
                 Role = entity.Role
             };
         }
+=======
+            Id = entity.Id,
+            NIC = entity.NIC,
+            Name = entity.Name,
+            IndexNumber = entity.IndexNumber,
+            Username = entity.Username,
+            Password = entity.Password,
+            Role = entity.Role
+        };
+    
+>>>>>>> aaf16da70d44d4987a8c27562a13b683e3b478f6
     }
 }

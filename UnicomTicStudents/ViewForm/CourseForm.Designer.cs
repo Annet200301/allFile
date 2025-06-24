@@ -53,9 +53,15 @@
             // courseDataGridView
             // 
             this.courseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             this.courseDataGridView.Location = new System.Drawing.Point(14, 196);
             this.courseDataGridView.Name = "courseDataGridView";
             this.courseDataGridView.Size = new System.Drawing.Size(247, 227);
+=======
+            this.courseDataGridView.Location = new System.Drawing.Point(12, 203);
+            this.courseDataGridView.Name = "courseDataGridView";
+            this.courseDataGridView.Size = new System.Drawing.Size(262, 309);
+>>>>>>> aaf16da70d44d4987a8c27562a13b683e3b478f6
             this.courseDataGridView.TabIndex = 2;
             this.courseDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.courseDataGridView_CellContentClick);
             // 
@@ -81,7 +87,7 @@
             // 
             // btnDeleteCourse
             // 
-            this.btnDeleteCourse.Location = new System.Drawing.Point(163, 7);
+            this.btnDeleteCourse.Location = new System.Drawing.Point(165, 7);
             this.btnDeleteCourse.Name = "btnDeleteCourse";
             this.btnDeleteCourse.Size = new System.Drawing.Size(75, 57);
             this.btnDeleteCourse.TabIndex = 3;
@@ -94,9 +100,13 @@
             this.panel1.Controls.Add(this.btnUpdateCourse);
             this.panel1.Controls.Add(this.btnAddCourse);
             this.panel1.Controls.Add(this.btnDeleteCourse);
+<<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(19, 102);
+=======
+            this.panel1.Location = new System.Drawing.Point(15, 80);
+>>>>>>> aaf16da70d44d4987a8c27562a13b683e3b478f6
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(246, 73);
+            this.panel1.Size = new System.Drawing.Size(259, 73);
             this.panel1.TabIndex = 4;
             // 
             // label2
@@ -114,7 +124,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(349, 9);
+=======
+            this.label1.Location = new System.Drawing.Point(358, 22);
+>>>>>>> aaf16da70d44d4987a8c27562a13b683e3b478f6
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(198, 18);
             this.label1.TabIndex = 6;
@@ -123,11 +137,18 @@
             // 
             // panel2
             // 
+<<<<<<< HEAD
             this.panel2.Location = new System.Drawing.Point(280, 30);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(408, 495);
             this.panel2.TabIndex = 7;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+=======
+            this.panel2.Location = new System.Drawing.Point(280, 43);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(408, 469);
+            this.panel2.TabIndex = 7;
+>>>>>>> aaf16da70d44d4987a8c27562a13b683e3b478f6
             // 
             // CourseForm
             // 
