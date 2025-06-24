@@ -82,13 +82,7 @@ C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicS
 <<<<<<< HEAD
 C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.exe.config
 =======
-C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.AdminAdminRegistration.resources
-C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.AdminLecturerRegistration.resources
-C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.AdminStaffRegistration.resources
-C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.AdminStudentRegistration.resources
 C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.LecturerRegistration.resources
-C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.staffRegistration.resources
-C:\Users\Annet\Desktop\NewCloning\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.StudentRegistration.resources
 C:\Users\Abishegah\OneDrive\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.csproj.AssemblyReference.cache
 C:\Users\Abishegah\OneDrive\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.exe.config
 C:\Users\Abishegah\OneDrive\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\ADMIN.viewform.AboutUmsForm.resources
