@@ -36,6 +36,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,9 +53,9 @@
             // courseDataGridView
             // 
             this.courseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.courseDataGridView.Location = new System.Drawing.Point(27, 290);
+            this.courseDataGridView.Location = new System.Drawing.Point(14, 196);
             this.courseDataGridView.Name = "courseDataGridView";
-            this.courseDataGridView.Size = new System.Drawing.Size(247, 222);
+            this.courseDataGridView.Size = new System.Drawing.Size(247, 227);
             this.courseDataGridView.TabIndex = 2;
             this.courseDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.courseDataGridView_CellContentClick);
             // 
@@ -93,7 +94,7 @@
             this.panel1.Controls.Add(this.btnUpdateCourse);
             this.panel1.Controls.Add(this.btnAddCourse);
             this.panel1.Controls.Add(this.btnDeleteCourse);
-            this.panel1.Location = new System.Drawing.Point(28, 193);
+            this.panel1.Location = new System.Drawing.Point(19, 102);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(246, 73);
             this.panel1.TabIndex = 4;
@@ -113,18 +114,27 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 63);
+            this.label1.Location = new System.Drawing.Point(349, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(198, 18);
             this.label1.TabIndex = 6;
             this.label1.Text = " To add subject click here";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(280, 30);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(408, 495);
+            this.panel2.TabIndex = 7;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
             // CourseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 537);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.courseDataGridView);
@@ -150,5 +160,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

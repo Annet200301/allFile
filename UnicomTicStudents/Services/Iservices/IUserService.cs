@@ -7,12 +7,13 @@ using UnicomTicStudents.Models.DTOs;
 
 namespace UnicomTicStudents.Services.Iservices
 {
-    internal interface IUserService
+    public  interface IUserService
     {
-
-        void RegisterUser(UserDTO dto);
+        void RegisterUser(UserDTO user);
+        void UpdateUser(UserDTO user);
+        void DeleteUser(int id);
         UserDTO GetByNICAndName(string nic, string name);
-        void UpdateUser(UserDTO dto);
         UserDTO Login(string username, string password);
+        List<UserDTO> GetAllUsers();
     }
 }

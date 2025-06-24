@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace UnicomTicStudents.Models
 {
-    internal class UsersEntity
+    public  class UsersEntity
     {
         public int Id { get; set; }
         public string NIC { get; set; }

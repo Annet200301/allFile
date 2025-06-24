@@ -49,9 +49,9 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(157, 33);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(355, 24);
+            this.label4.Size = new System.Drawing.Size(289, 24);
             this.label4.TabIndex = 55;
-            this.label4.Text = "Admin Lecturer  Registration Form";
+            this.label4.Text = " Lecturer  Registration Form";
             // 
             // CancelBtn
             // 
@@ -178,6 +178,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AdminLecturerRegistration";
             this.Text = "AdminLecturerRegistration";
+            this.Load += new System.EventHandler(this.AdminLecturerRegistration_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

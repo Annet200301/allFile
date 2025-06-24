@@ -14,14 +14,7 @@ namespace UnicomTicStudents.Course
     {      
         public CourseRepository()
         {
-            using (var connection = DataConfig.GetConnection())
-            {              
-                string query = "CREATE TABLE IF NOT EXISTS Courses (Id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT NOT NULL)";
-                using (var cmd = new SQLiteCommand(query, connection))
-                {
-                    cmd.ExecuteNonQuery();
-                }
-            }
+
         }
 
         public void Add(CourseEntity course)

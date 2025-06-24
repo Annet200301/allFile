@@ -14,11 +14,11 @@ namespace UnicomTicStudents.ViewForm
 {
     public partial class AdminStudentRegistration : Form
     {
-        private readonly UserController _controller;   
-        public AdminStudentRegistration(UserController controller)
+         
+        public AdminStudentRegistration()
         {
             InitializeComponent();
-            _controller = controller;
+          
         }
 
         private void AdminStudentRegistration_Load(object sender, EventArgs e)
@@ -33,30 +33,30 @@ namespace UnicomTicStudents.ViewForm
 
         private void registerBtn_Click_1(object sender, EventArgs e)
         {
-            string nic = nicnumberTXT.Text.Trim();
-            string name = fullnameTXT.Text.Trim();
-            string username = usernametxt.Text.Trim();
-            string password = passwordtxt.Text.Trim();
+            //string nic = nicnumberTXT.Text.Trim();
+            //string name = fullnameTXT.Text.Trim();
+            //string username = usernametxt.Text.Trim();
+            //string password = passwordtxt.Text.Trim();
 
-            string result = _controller.SetUserCredentials(nic, name, username, password);
-            MessageBox.Show(result);
+            //string result = _controller.SetUserCredentials(nic, name, username, password);
+            //MessageBox.Show(result);
         }
 
         private void label5_Click(object sender, EventArgs e)
         {
-            string nic = nicnumberTXT.Text.Trim();
-            string name = fullnameTXT.Text.Trim();
+            //string nic = nicnumberTXT.Text.Trim();
+            //string name = fullnameTXT.Text.Trim();
 
-            var user = _controller.GetByNICAndName(nic, name);
-            if (user != null)
-            {
-                indexnumberTXT.Text = user.IndexNumber;
-                label5.Text = "You are eligible to register.";
-            }
-            else
-            {
-                label5.Text = "You are not pre-registered.";
-            }
+            //var user = _controller.GetByNICAndName(nic, name);
+            //if (user != null)
+            //{
+            //    indexnumberTXT.Text = user.IndexNumber;
+            //    label5.Text = "You are eligible to register.";
+            //}
+            //else
+            //{
+            //    label5.Text = "You are not pre-registered.";
+            //}
         }
     }
 }

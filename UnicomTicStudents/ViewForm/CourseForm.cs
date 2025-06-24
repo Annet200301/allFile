@@ -12,6 +12,10 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using UnicomTicStudents.Course;
 using UnicomTicStudents.Datas;
+using UnicomTicStudents.Repositories;
+using UnicomTicStudents.Repositories.Irepository;
+using UnicomTicStudents.Services;
+using UnicomTicStudents.Services.Iservices;
 using UnicomTicStudents.ViewForm;
 using static UnicomTicStudents.Course.CourseEnum;
 
@@ -182,8 +186,52 @@ namespace UnicomTicStudents
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-            SubjectForm subjectForm = new SubjectForm();
-            subjectForm.ShowDialog();
+            var courseRepo = new CourseRepository();
+            var subjectRepo = new Subjectrepository();
+
+            var courseService = new CourseService(courseRepo);
+            var subjectService = new SubjectSevices(subjectRepo);
+
+            var subjectForm = new SubjectForm(subjectService, courseService);
+
+            // Panel-ல் form-ஐ load செய்ய
+            subjectForm.TopLevel = false;
+            subjectForm.FormBorderStyle = FormBorderStyle.None;
+            subjectForm.Dock = DockStyle.Fill;
+            panel2.Controls.Add(subjectForm); // உங்கள் panel பெயர் இதுவா என்பதை உறுதிசெய்யவும்
+            subjectForm.Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void LoadFormIntoPanel(SubjectForm form)
+        {
+            if (panel2.Controls.Count > 0)
+            {
+                Control existingControl = panel2.Controls[0];
+
+
+                panel2.Controls.Remove(existingControl);
+                existingControl.Dispose();
+            }
+
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+
+            panel2.Controls.Add(form);
+            form.Show();
+        }
+        private void LoadFormInPanel(SubjectForm form)
+        {
+            panel2.Controls.Clear();  // Clear the panel
+            form.TopLevel = false;            // Make the form a child control
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;       // Make it fill the panel
+            panel2.Controls.Add(form);
+            form.Show();
         }
     }
 }

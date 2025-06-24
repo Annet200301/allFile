@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UnicomTicStudents.ViewForm;
 using static ADMIN.Enums.UserRoles;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -43,16 +44,16 @@ namespace ADMIN.viewform
             switch (selectedForm)
             {
                 case Role.Student:
-                    LoadFormIntoPanel(new StudentRegister());
+                    LoadFormIntoPanel(new AdminStudentRegistration());
                     break;
                 case Role.Lecturer:
-                    LoadFormIntoPanel(new LecturerRegister());                       
+                    LoadFormIntoPanel(new AdminLecturerRegistration());
                     break;
                 case Role.Staff:
-                    LoadFormIntoPanel(new StaffRegister());
+                    LoadFormIntoPanel(new AdminStaffRegistration());
                     break;
                 case Role.Admin:
-                    LoadFormIntoPanel(new AdminRegistration());
+                    LoadFormIntoPanel(new AdminAdminRegistration());
                     break;
             }
         }

@@ -8,7 +8,7 @@ using UnicomTicStudents.Services.Iservices;
 
 namespace UnicomTicStudents.Controllers
 {
-    internal class UserController
+    public  class UserController
     {
         private readonly IUserService _service;
 
@@ -31,25 +31,24 @@ namespace UnicomTicStudents.Controllers
             return _service.GetByNICAndName(nic, name);
         }
 
-        public string SetUserCredentials(string nic, string name, string username, string password)
+        public void UpdateUser(UserDTO dto)
         {
-            var user = _service.GetByNICAndName(nic, name);
+            _service.UpdateUser(dto);
+        }
 
-            if (user == null)
-                return "User not found.";
-
-            if (!string.IsNullOrEmpty(user.Username))
-                return "Account already created.";
-
-            user.Username = username;
-            user.Password = password;
-            _service.UpdateUser(user);
-            return "Account setup successful.";
+        public void DeleteUser(int id)
+        {
+            _service.DeleteUser(id);
         }
 
         public UserDTO Login(string username, string password)
         {
             return _service.Login(username, password);
+        }
+
+        public List<UserDTO> GetAllUsers()
+        {
+            return _service.GetAllUsers();
         }
     }
 }

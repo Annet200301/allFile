@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.exitBtn = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.adminAdminBtn = new System.Windows.Forms.Button();
             this.adminTimetblBtn = new System.Windows.Forms.Button();
             this.adminStaffBtn = new System.Windows.Forms.Button();
             this.adminlectureBtn = new System.Windows.Forms.Button();
+            this.userBtn = new System.Windows.Forms.Button();
             this.adminStudentBtn = new System.Windows.Forms.Button();
-            this.adminRegisterBtn = new System.Windows.Forms.Button();
             this.adminMarksBtn = new System.Windows.Forms.Button();
             this.adminExamBtn = new System.Windows.Forms.Button();
             this.adminCourseBtn = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.exitBtn);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -58,19 +58,17 @@
             this.panel1.Size = new System.Drawing.Size(903, 52);
             this.panel1.TabIndex = 0;
             // 
-            // exitBtn
+            // label2
             // 
-            this.exitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.exitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.exitBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exitBtn.Location = new System.Drawing.Point(865, 11);
-            this.exitBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(27, 20);
-            this.exitBtn.TabIndex = 6;
-            this.exitBtn.Text = "✖";
-            this.exitBtn.UseVisualStyleBackColor = false;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(841, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 19);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "EXIT";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -89,8 +87,8 @@
             this.panel2.Controls.Add(this.adminTimetblBtn);
             this.panel2.Controls.Add(this.adminStaffBtn);
             this.panel2.Controls.Add(this.adminlectureBtn);
+            this.panel2.Controls.Add(this.userBtn);
             this.panel2.Controls.Add(this.adminStudentBtn);
-            this.panel2.Controls.Add(this.adminRegisterBtn);
             this.panel2.Controls.Add(this.adminMarksBtn);
             this.panel2.Controls.Add(this.adminExamBtn);
             this.panel2.Controls.Add(this.adminCourseBtn);
@@ -113,7 +111,7 @@
             // 
             // adminTimetblBtn
             // 
-            this.adminTimetblBtn.Location = new System.Drawing.Point(0, 236);
+            this.adminTimetblBtn.Location = new System.Drawing.Point(-1, 281);
             this.adminTimetblBtn.Name = "adminTimetblBtn";
             this.adminTimetblBtn.Size = new System.Drawing.Size(178, 39);
             this.adminTimetblBtn.TabIndex = 0;
@@ -141,6 +139,16 @@
             this.adminlectureBtn.UseVisualStyleBackColor = true;
             this.adminlectureBtn.Click += new System.EventHandler(this.adminlectureBtn_Click);
             // 
+            // userBtn
+            // 
+            this.userBtn.Location = new System.Drawing.Point(0, 11);
+            this.userBtn.Name = "userBtn";
+            this.userBtn.Size = new System.Drawing.Size(178, 39);
+            this.userBtn.TabIndex = 0;
+            this.userBtn.Text = " USER MANAGEMENT";
+            this.userBtn.UseVisualStyleBackColor = true;
+            this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
+            // 
             // adminStudentBtn
             // 
             this.adminStudentBtn.Location = new System.Drawing.Point(0, 56);
@@ -151,19 +159,9 @@
             this.adminStudentBtn.UseVisualStyleBackColor = true;
             this.adminStudentBtn.Click += new System.EventHandler(this.adminStudentBtn_Click);
             // 
-            // adminRegisterBtn
-            // 
-            this.adminRegisterBtn.Location = new System.Drawing.Point(0, 11);
-            this.adminRegisterBtn.Name = "adminRegisterBtn";
-            this.adminRegisterBtn.Size = new System.Drawing.Size(178, 39);
-            this.adminRegisterBtn.TabIndex = 0;
-            this.adminRegisterBtn.Text = "ADD REGISTERS ACCOUNT";
-            this.adminRegisterBtn.UseVisualStyleBackColor = true;
-            this.adminRegisterBtn.Click += new System.EventHandler(this.adminRegisterBtn_Click);
-            // 
             // adminMarksBtn
             // 
-            this.adminMarksBtn.Location = new System.Drawing.Point(0, 417);
+            this.adminMarksBtn.Location = new System.Drawing.Point(0, 371);
             this.adminMarksBtn.Name = "adminMarksBtn";
             this.adminMarksBtn.Size = new System.Drawing.Size(178, 39);
             this.adminMarksBtn.TabIndex = 0;
@@ -173,7 +171,7 @@
             // 
             // adminExamBtn
             // 
-            this.adminExamBtn.Location = new System.Drawing.Point(0, 372);
+            this.adminExamBtn.Location = new System.Drawing.Point(-1, 326);
             this.adminExamBtn.Name = "adminExamBtn";
             this.adminExamBtn.Size = new System.Drawing.Size(178, 39);
             this.adminExamBtn.TabIndex = 0;
@@ -183,7 +181,7 @@
             // 
             // adminCourseBtn
             // 
-            this.adminCourseBtn.Location = new System.Drawing.Point(0, 326);
+            this.adminCourseBtn.Location = new System.Drawing.Point(0, 236);
             this.adminCourseBtn.Name = "adminCourseBtn";
             this.adminCourseBtn.Size = new System.Drawing.Size(178, 39);
             this.adminCourseBtn.TabIndex = 0;
@@ -193,7 +191,7 @@
             // 
             // adminAttendenceBtn
             // 
-            this.adminAttendenceBtn.Location = new System.Drawing.Point(-1, 281);
+            this.adminAttendenceBtn.Location = new System.Drawing.Point(-1, 416);
             this.adminAttendenceBtn.Name = "adminAttendenceBtn";
             this.adminAttendenceBtn.Size = new System.Drawing.Size(178, 39);
             this.adminAttendenceBtn.TabIndex = 0;
@@ -235,7 +233,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Button adminAttendenceBtn;
         private System.Windows.Forms.Button adminlectureBtn;
         private System.Windows.Forms.Button adminStudentBtn;
@@ -243,9 +240,10 @@
         private System.Windows.Forms.Button adminStaffBtn;
         private System.Windows.Forms.Button adminAdminBtn;
         private System.Windows.Forms.Button adminExamBtn;
-        private System.Windows.Forms.Button adminRegisterBtn;
         private System.Windows.Forms.Button adminMarksBtn;
         private System.Windows.Forms.Button adminCourseBtn;
         private System.Windows.Forms.Panel AdminPanel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button userBtn;
     }
 }

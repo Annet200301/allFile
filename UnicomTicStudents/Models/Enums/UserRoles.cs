@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace ADMIN.Enums
 {
-    internal class UserRoles
+    public  class UserRoles
     {
         public enum Role
         {
-            Student,
-            Lecturer,
-            Staff,
-            Admin
+            All = -1,
+            Admin = 0,
+            Lecturer = 1,
+            Staff = 2,
+            Student = 3
         }
     }
 }

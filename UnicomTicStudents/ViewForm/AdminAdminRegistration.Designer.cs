@@ -49,9 +49,9 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(166, 33);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(336, 24);
+            this.label4.Size = new System.Drawing.Size(270, 24);
             this.label4.TabIndex = 55;
-            this.label4.Text = "Admin Admin  Registration Form";
+            this.label4.Text = " Admin  Registration Form";
             // 
             // CancelBtn
             // 
@@ -62,6 +62,7 @@
             this.CancelBtn.TabIndex = 53;
             this.CancelBtn.Text = "Cancel";
             this.CancelBtn.UseVisualStyleBackColor = true;
+            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
             // registerBtn
             // 
@@ -72,6 +73,7 @@
             this.registerBtn.TabIndex = 54;
             this.registerBtn.Text = "Register";
             this.registerBtn.UseVisualStyleBackColor = true;
+            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
             // nicnumberTXT
             // 
@@ -79,6 +81,7 @@
             this.nicnumberTXT.Name = "nicnumberTXT";
             this.nicnumberTXT.Size = new System.Drawing.Size(157, 20);
             this.nicnumberTXT.TabIndex = 48;
+            this.nicnumberTXT.Text = " ";
             // 
             // textBox2
             // 
@@ -86,6 +89,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(157, 20);
             this.textBox2.TabIndex = 49;
+            this.textBox2.Text = " ";
             // 
             // textBox1
             // 
@@ -93,6 +97,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(157, 20);
             this.textBox1.TabIndex = 50;
+            this.textBox1.Text = " ";
             // 
             // usernameTXT
             // 
@@ -100,6 +105,7 @@
             this.usernameTXT.Name = "usernameTXT";
             this.usernameTXT.Size = new System.Drawing.Size(157, 20);
             this.usernameTXT.TabIndex = 51;
+            this.usernameTXT.Text = " ";
             // 
             // fullnameTXT
             // 
@@ -107,6 +113,7 @@
             this.fullnameTXT.Name = "fullnameTXT";
             this.fullnameTXT.Size = new System.Drawing.Size(157, 20);
             this.fullnameTXT.TabIndex = 52;
+            this.fullnameTXT.TextChanged += new System.EventHandler(this.fullnameTXT_TextChanged);
             // 
             // label7
             // 
@@ -178,6 +185,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AdminAdminRegistration";
             this.Text = "AdminAdminRegistration";
+            this.Load += new System.EventHandler(this.AdminAdminRegistration_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

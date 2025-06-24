@@ -8,9 +8,12 @@ using UnicomTicStudents.Models.DTOs;
 
 namespace UnicomTicStudents.Repositories.Irepository
 {
-    internal interface ISubjectRepository
+    public interface ISubjectRepository
     {
         void AddSubject(SubjectEntity subject);
+        void UpdateSubject(SubjectEntity subject);
+        void DeleteSubject(int id);
         List<SubjectDTO> GetSubjectsByCourseId(int courseId);
+        List<SubjectDTO> GetAllSubjects();
     }
 }

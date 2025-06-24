@@ -17,11 +17,11 @@ namespace ADMIN.viewform
 {
     public partial class LoginForm : Form
     {
-        private readonly UserController _controller;
+        
         public LoginForm()
         {
-            InitializeComponent(UserController controller);
-            _controller = controller;
+            InitializeComponent();
+            
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
@@ -77,22 +77,8 @@ namespace ADMIN.viewform
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = usernametxt.Text.Trim();
-            string password = passwordtxt.Text.Trim();
-
-            var user = _controller.Login(username, password);
-
-            if (user != null)
-            {
-                MessageBox.Show($"Welcome {user.Name}! Role: {user.Role}");
-            }
-            else
-            {
-                MessageBox.Show("Invalid username or password.");
-            }
             Form2 form = new Form2();
-            AdminDashboard dashboard = new AdminDashboard(form); 
-            form .Hide();
+            AdminDashboard dashboard = new AdminDashboard(form);
             dashboard.Show();
 
 

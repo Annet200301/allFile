@@ -10,7 +10,7 @@ using UnicomTicStudents.Services.Iservices;
 
 namespace UnicomTicStudents.Services
 {
-    internal class UserService: IUserService
+    public class UserService : IUserService
     {
         private readonly IUserRepository _repository;
 
@@ -19,28 +19,58 @@ namespace UnicomTicStudents.Services
             _repository = repository;
         }
 
-        public void RegisterUser(UserDTO dto)
+        public void RegisterUser(UserDTO user)
         {
-            var entity = UserMapper.ToEntity(dto);
-            _repository.Add(entity);
+            Validate(user);
+            if (!string.IsNullOrWhiteSpace(user.Password))
+                user.Password = Passwordhelper.HashPassword(user.Password);
+
+            var entity = UserMapper.ToEntity(user);
+            _repository.AddUser(entity);
+        }
+
+        public void UpdateUser(UserDTO user)
+        {
+            Validate(user);
+            if (!string.IsNullOrWhiteSpace(user.Password))
+                user.Password = Passwordhelper.HashPassword(user.Password);
+
+            var entity = UserMapper.ToEntity(user);
+            _repository.UpdateUser(entity);
+        }
+
+        public void DeleteUser(int id)
+        {
+            _repository.DeleteUser(id);
         }
 
         public UserDTO GetByNICAndName(string nic, string name)
         {
             var entity = _repository.GetByNICAndName(nic, name);
-            return entity != null ? UserMapper.ToDTO(entity) : null;
-        }
-
-        public void UpdateUser(UserDTO dto)
-        {
-            var entity = UserMapper.ToEntity(dto);
-            _repository.Update(entity);
+            return entity == null ? null : UserMapper.ToDTO(entity);
         }
 
         public UserDTO Login(string username, string password)
         {
-            var entity = _repository.GetByUsernameAndPassword(username, password);
-            return entity != null ? UserMapper.ToDTO(entity) : null;
+            var hashed = Passwordhelper.HashPassword(password);
+            var entity = _repository.GetByUsernameAndPassword(username, hashed);
+            return entity == null ? null : UserMapper.ToDTO(entity);
         }
+
+        public List<UserDTO> GetAllUsers()
+        {
+            return _repository.GetAllUsers().Select(UserMapper.ToDTO).ToList();
+        }
+
+        private void Validate(UserDTO user)
+        {
+            if (string.IsNullOrWhiteSpace(user.NIC))
+                throw new ArgumentException("NIC cannot be empty.");
+            if (string.IsNullOrWhiteSpace(user.Name))
+                throw new ArgumentException("Name cannot be empty.");
+            if (string.IsNullOrWhiteSpace(user.IndexNumber))
+                throw new ArgumentException("Index Number cannot be empty.");
+        }
+       
     }
 }

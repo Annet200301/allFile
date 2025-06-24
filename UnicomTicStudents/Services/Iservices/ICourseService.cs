@@ -7,7 +7,7 @@ using UnicomTicStudents.Course;
 
 namespace UnicomTicStudents.Services
 {
-    internal interface ICourseService
+    public  interface ICourseService
     {      
         void AddCourse(CourseDTO dto);
         void UpdateCourse(CourseDTO dto);

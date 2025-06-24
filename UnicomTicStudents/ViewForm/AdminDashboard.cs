@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UnicomTicStudents;
+using UnicomTicStudents.Controllers;
+using UnicomTicStudents.Course;
+using UnicomTicStudents.Repositories;
+using UnicomTicStudents.Repositories.Irepository;
+using UnicomTicStudents.Services;
+using UnicomTicStudents.Services.Iservices;
+using UnicomTicStudents.ViewForm;
 
 namespace ADMIN.viewform
 {
@@ -29,14 +36,7 @@ namespace ADMIN.viewform
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            var confirmResult = MessageBox.Show("Are you sure you want to exit?", "Exit Application",
-                                       MessageBoxButtons.YesNo,
-                                       MessageBoxIcon.Question);
-
-            if (confirmResult == DialogResult.Yes)
-            {
-                this.Close(); 
-            }
+           
         }      
         private void LoadFormIntoPanel(Form form)
         {
@@ -74,27 +74,43 @@ namespace ADMIN.viewform
 
         private void adminStudentBtn_Click(object sender, EventArgs e)
         {
-
+            IStudentRepository studentRepo = new StudntRepository();
+            IStudentService studentService = new StudentService(studentRepo);
+            StudentController _controller = new StudentController(studentService);
+            ICourseRepository courseRepo = new CourseRepository();
+            ICourseService courseService = new CourseService(courseRepo);
+            var form = new StudentForm(_controller, courseService);
+            LoadFormIntoPanel(form);
+            ;
         }
 
         private void adminlectureBtn_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void adminStaffBtn_Click(object sender, EventArgs e)
         {
-
+            IStaffRepository staffRepo = new StaffRepository();
+            IStaffService staffService = new StaffService(staffRepo);
+            var form = new StaffManagementForm(staffService);
+            LoadFormIntoPanel(form);    
         }
 
         private void adminAdminBtn_Click(object sender, EventArgs e)
         {
+            IAdminRepository adminRepo = new AdminRepository();
+            IAdminService adminService = new AdminService(adminRepo);
 
+            var form = new AdminManagementForm(adminService);
+
+            LoadFormIntoPanel(form); 
         }
 
         private void adminTimetblBtn_Click(object sender, EventArgs e)
         {
-
+            TimeTableManagement form = new TimeTableManagement();
+            LoadFormIntoPanel(form);    
         }
 
         private void adminAttendenceBtn_Click(object sender, EventArgs e)
@@ -117,6 +133,31 @@ namespace ADMIN.viewform
         private void adminMarksBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+            var confirmResult = MessageBox.Show("Are you sure you want to exit?", "Exit Application",
+                                       MessageBoxButtons.YesNo,
+                                       MessageBoxIcon.Question);
+
+            if (confirmResult == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void userBtn_Click(object sender, EventArgs e)
+        {
+            ILecturerRepository lecturerRepo = new LecturerRepository();
+            ILecturerServices lecturerService = new LecturerService(lecturerRepo);
+
+            ISubjectRepository subjectRepo = new Subjectrepository();
+            IsubjectServices subjectService = new SubjectSevices(subjectRepo);
+
+            var form = new LecturerManagementSystem(lecturerService, subjectService);
+            LoadFormIntoPanel(form);
         }
     }
 }

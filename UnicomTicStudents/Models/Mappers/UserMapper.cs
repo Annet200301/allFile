@@ -16,9 +16,7 @@ namespace UnicomTicStudents.Models.Mappers
                 Id = dto.Id,
                 NIC = dto.NIC,
                 Name = dto.Name,
-                IndexNumber = dto.IndexNumber,
-                Username = dto.Username,
-                Password = dto.Password,
+                IndexNumber = dto.IndexNumber,               
                 Role = dto.Role
             };
         }
@@ -30,9 +28,7 @@ namespace UnicomTicStudents.Models.Mappers
                 Id = entity.Id,
                 NIC = entity.NIC,
                 Name = entity.Name,
-                IndexNumber = entity.IndexNumber,
-                Username = entity.Username,
-                Password = entity.Password,
+                IndexNumber = entity.IndexNumber,              
                 Role = entity.Role
             };
         }

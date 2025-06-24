@@ -8,14 +8,14 @@ using UnicomTicStudents.Models.DTOs;
 
 namespace UnicomTicStudents.Repositories.Irepository
 {
-    internal interface IUserRepository
+    public  interface IUserRepository
     {
-
-
-        void Add(UsersEntity user);
-        void Update(UsersEntity user);
+        void AddUser(UsersEntity user);
+        void UpdateUser(UsersEntity user);
+        void DeleteUser(int id);
+        UsersEntity GetById(int id);
         UsersEntity GetByNICAndName(string nic, string name);
         UsersEntity GetByUsernameAndPassword(string username, string password);
-        List<UsersEntity> GetAll();
+        List<UsersEntity> GetAllUsers();
     }
 }

@@ -9,7 +9,7 @@ namespace UnicomTicStudents.Datas
 {
     internal class DataConfig
     {
-        private static string connectionString = "Data Source=courses.db;Version=3;";
+        private static string connectionString = "Data Source=UnicomTicManagementDB.db;Version=3;";
         public static SQLiteConnection GetConnection()
         {
             var conn = new SQLiteConnection(connectionString);

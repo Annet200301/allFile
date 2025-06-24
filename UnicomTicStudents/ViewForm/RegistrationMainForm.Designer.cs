@@ -35,7 +35,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.registerMainPanel = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.registerMainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,6 +108,7 @@
             // 
             // registerMainPanel
             // 
+            this.registerMainPanel.Controls.Add(this.label5);
             this.registerMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.registerMainPanel.Location = new System.Drawing.Point(0, 55);
             this.registerMainPanel.Margin = new System.Windows.Forms.Padding(2);
@@ -113,6 +116,16 @@
             this.registerMainPanel.Size = new System.Drawing.Size(682, 366);
             this.registerMainPanel.TabIndex = 1;
             this.registerMainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.registerMainPanel_Paint);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Lucida Sans", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(146, 140);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(370, 18);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Choose your position  then you can register ";
             // 
             // RegistrationMainForm
             // 
@@ -127,6 +140,8 @@
             this.Text = "RegistrationMainForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.registerMainPanel.ResumeLayout(false);
+            this.registerMainPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -140,5 +155,6 @@
         private System.Windows.Forms.ComboBox memberCMB2;
         private System.Windows.Forms.Button memberSelectionBtn2;
         private System.Windows.Forms.Panel registerMainPanel;
+        private System.Windows.Forms.Label label5;
     }
 }
