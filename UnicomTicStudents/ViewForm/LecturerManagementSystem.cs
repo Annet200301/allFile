@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using UnicomTicStudents.Models.DTOs;
 using UnicomTicStudents.Services;
 using UnicomTicStudents.Services.Iservices;
+using UnicomTicStudents.Services.IServices;
 
 namespace UnicomTicStudents.ViewForm
 {

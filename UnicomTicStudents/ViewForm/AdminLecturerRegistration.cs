@@ -13,11 +13,11 @@ namespace UnicomTicStudents.ViewForm
 {
     public partial class AdminLecturerRegistration : Form
     {
-        private readonly UserDTO _user;
-        public AdminLecturerRegistration(UserDTO user)
+       
+        public AdminLecturerRegistration()
         {
             InitializeComponent();
-            _user = user;
+          
         }
 
         private void AdminLecturerRegistration_Load(object sender, EventArgs e)
@@ -25,9 +25,6 @@ namespace UnicomTicStudents.ViewForm
 
         }
 
-        private void AdminLecturerRegistration_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }

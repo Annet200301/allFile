@@ -32,12 +32,12 @@
             // 
             // staffRegistration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 595);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ClientSize = new System.Drawing.Size(668, 387);
             this.Name = "staffRegistration";
             this.Text = "staffRegistration";
+            this.Load += new System.EventHandler(this.staffRegistration_Load);
             this.ResumeLayout(false);
 
         }

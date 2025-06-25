@@ -19,7 +19,7 @@ namespace UnicomTicStudents.Services
             _repository = repository;
         }
 
-        public void RegisterUser(UserDTO user)
+        public void RegisterUser(UserDTO user, UserMapper UserMapper)
         {
             Validate(user);
             if (!string.IsNullOrWhiteSpace(user.Password))
@@ -29,7 +29,7 @@ namespace UnicomTicStudents.Services
             _repository.AddUser(entity);
         }
 
-        public void UpdateUser(UserDTO user)
+        public void UpdateUser(UserDTO user, UserMapper UserMapper)
         {
             Validate(user);
             if (!string.IsNullOrWhiteSpace(user.Password))
@@ -45,6 +45,11 @@ namespace UnicomTicStudents.Services
         }
 
         public UserDTO GetByNICAndName(string nic, string name)
+        {
+            return GetByNICAndName(nic, name);
+        }
+
+        public UserDTO GetByNICAndName(string nic, string name, UserMapper UserMapper)
         {
             var entity = _repository.GetByNICAndName(nic, name);
             return entity == null ? null : UserMapper.ToDTO(entity);

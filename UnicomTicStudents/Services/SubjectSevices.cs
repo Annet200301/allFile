@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnicomTicStudents.Mappers;
 using UnicomTicStudents.Models.DTOs;
 using UnicomTicStudents.Repositories.Irepository;
+using UnicomTicStudents.Services.IServices;
 
 namespace UnicomTicStudents.Services
 {
-    internal class SubjectSevices: IsubjectServices
+   public  class SubjectSevices: IsubjectServices
     {
         private readonly ISubjectRepository _repository;
 

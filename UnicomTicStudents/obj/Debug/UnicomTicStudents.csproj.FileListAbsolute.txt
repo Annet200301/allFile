@@ -132,3 +132,10 @@ C:\Users\UT010188\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomT
 C:\Users\UT010188\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.exe
 C:\Users\UT010188\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.pdb
 >>>>>>> aaf16da70d44d4987a8c27562a13b683e3b478f6
+C:\Users\UT010188\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.AdminManagementForm.resources
+C:\Users\UT010188\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.UserForm.resources
+C:\Users\UT010188\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.LecturerManagementSystem.resources
+C:\Users\UT010188\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.RoomForm.resources
+C:\Users\UT010188\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.StaffManagementForm.resources
+C:\Users\UT010188\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.StudentForm.resources
+C:\Users\UT010188\Desktop\New folder\allFile\UnicomTicStudents\obj\Debug\UnicomTicStudents.ViewForm.TimeTableManagement.resources

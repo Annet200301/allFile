@@ -13,11 +13,11 @@ namespace UnicomTicStudents.ViewForm
 {
     public partial class AdminStaffRegistration : Form
     {
-        private readonly UserDTO _user;
-        public AdminStaffRegistration(UserDTO user)
+       
+        public AdminStaffRegistration()
         {
             InitializeComponent();
-            _user = user;   
+           
         }
 
         private void AdminStaffRegistration_Load(object sender, EventArgs e)

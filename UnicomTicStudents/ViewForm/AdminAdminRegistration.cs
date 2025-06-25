@@ -22,10 +22,7 @@ namespace UnicomTicStudents.ViewForm
             _adminRepository = new AdminRepository();
         }
 
-        private void AdminAdminRegistration_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void fullnameTXT_TextChanged(object sender, EventArgs e)
         {

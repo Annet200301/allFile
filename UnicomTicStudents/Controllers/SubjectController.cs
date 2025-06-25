@@ -22,7 +22,7 @@ namespace UnicomTicStudents.Controllers
 
         public void AddSubject(string subjectName, int courseId)
         {
-            AddSubject(subjectName, courseId, subjectEntity);
+            AddSubject(subjectName, courseId);
         }
 
         public void AddSubject(string subjectName, int courseId, SubjectEntity subjectEntity)
@@ -38,7 +38,7 @@ namespace UnicomTicStudents.Controllers
 
         public List<SubjectDTO> GetSubjectsByCourseId(int courseId)
         {
-            return _subjectSevices.GetSubjectsByCourseId(courseId);
+            return subjectServices.GetSubjectsByCourseId(courseId);
         }
     }
 }

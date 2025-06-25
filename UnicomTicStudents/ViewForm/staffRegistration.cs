@@ -21,5 +21,10 @@ namespace UnicomTicStudents.ViewForm
         {
 
         }
+
+        private void staffRegistration_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

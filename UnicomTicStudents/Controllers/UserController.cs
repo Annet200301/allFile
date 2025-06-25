@@ -22,7 +22,7 @@ namespace UnicomTicStudents.Controllers
             if (_service.GetByNICAndName(dto.NIC, dto.Name) != null)
                 return "User already exists.";
 
-            _service.RegisterUser(dto);
+            _service.RegisterUser(dto, UserMapper);
             return "User registered successfully.";
         }
 
@@ -33,7 +33,7 @@ namespace UnicomTicStudents.Controllers
 
         public void UpdateUser(UserDTO dto)
         {
-            _service.UpdateUser(dto);
+            _service.UpdateUser(dto, UserMapper);
         }
 
         public void DeleteUser(int id)
