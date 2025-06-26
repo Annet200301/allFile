@@ -76,6 +76,24 @@ namespace UnicomTicStudents.Services
             if (string.IsNullOrWhiteSpace(user.IndexNumber))
                 throw new ArgumentException("Index Number cannot be empty.");
         }
-       
+        public void UpdateUser(UserDTO user)
+        {
+            Validate(user);
+            if (!string.IsNullOrWhiteSpace(user.Password))
+                user.Password = Passwordhelper.HashPassword(user.Password);
+
+            var entity =  UserMapper.ToEntity(user);
+            _repository.UpdateUser(entity);
+        }
+        public void RegisterUser(UserDTO user)
+        {
+            Validate(user);
+            if (!string.IsNullOrWhiteSpace(user.Password))
+                user.Password = Passwordhelper.HashPassword(user.Password);
+
+            var entity = UserMapper.ToEntity(user);
+            _repository.AddUser(entity);
+        }
+
     }
 }

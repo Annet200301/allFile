@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnicomTicStudents.Models.DTOs;
+using UnicomTicStudents.Models.Mappers;
 using UnicomTicStudents.Services.Iservices;
 
 namespace UnicomTicStudents.Controllers
@@ -22,7 +23,7 @@ namespace UnicomTicStudents.Controllers
             if (_service.GetByNICAndName(dto.NIC, dto.Name) != null)
                 return "User already exists.";
 
-            _service.RegisterUser(dto, UserMapper);
+            _service.RegisterUser(dto);
             return "User registered successfully.";
         }
 
@@ -33,7 +34,7 @@ namespace UnicomTicStudents.Controllers
 
         public void UpdateUser(UserDTO dto)
         {
-            _service.UpdateUser(dto, UserMapper);
+            _service.UpdateUser(dto);
         }
 
         public void DeleteUser(int id)

@@ -58,7 +58,7 @@ namespace UnicomTicStudents.Datas
                     NIC TEXT NOT NULL,
                     Username TEXT NOT NULL,
                     Password TEXT NOT NULL,
-                    Work TEXT NOT NULL,
+                    Work TEXT NOT NULL
                             );
                                 CREATE TABLE IF NOT EXISTS Rooms (
                     RoomID INTEGER PRIMARY KEY AUTOINCREMENT,

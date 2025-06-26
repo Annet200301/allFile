@@ -8,14 +8,15 @@ using UnicomTicStudents.Models.DTOs;
 using UnicomTicStudents.Repositories.Irepository;
 using UnicomTicStudents.Services;
 using UnicomTicStudents.Services.Iservices;
+using UnicomTicStudents.Services.IServices;
 
 namespace UnicomTicStudents.Controllers
 {
     internal class SubjectController
     {
-        private readonly ISubjectRepository subjectServices;
+        private readonly IsubjectServices subjectServices;
 
-        public SubjectController(ISubjectRepository _subjectServices)
+        public SubjectController(IsubjectServices _subjectServices)
         {
             subjectServices = _subjectServices; 
         }
@@ -27,13 +28,13 @@ namespace UnicomTicStudents.Controllers
 
         public void AddSubject(string subjectName, int courseId, SubjectEntity subjectEntity)
         {
-            var subjectEntity = new SubjectEntity
+            var subjectDTO = new SubjectDTO
             {
                 Name = subjectName,
                 CourseId = courseId
             };
 
-            subjectServices.AddSubject(subjectEntity);
+            subjectServices.AddSubject(subjectDTO);
         }
 
         public List<SubjectDTO> GetSubjectsByCourseId(int courseId)

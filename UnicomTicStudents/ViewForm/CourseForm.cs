@@ -194,11 +194,10 @@ namespace UnicomTicStudents
 
             var subjectForm = new SubjectForm(subjectService, courseService);
 
-            // Panel-ல் form-ஐ load செய்ய
             subjectForm.TopLevel = false;
             subjectForm.FormBorderStyle = FormBorderStyle.None;
             subjectForm.Dock = DockStyle.Fill;
-            panel2.Controls.Add(subjectForm); // உங்கள் panel பெயர் இதுவா என்பதை உறுதிசெய்யவும்
+            panel2.Controls.Add(subjectForm); 
             subjectForm.Show();
         }
 
@@ -226,10 +225,10 @@ namespace UnicomTicStudents
         }
         private void LoadFormInPanel(SubjectForm form)
         {
-            panel2.Controls.Clear();  // Clear the panel
-            form.TopLevel = false;            // Make the form a child control
+            panel2.Controls.Clear();
+            form.TopLevel = false;            
             form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.Fill;       // Make it fill the panel
+            form.Dock = DockStyle.Fill;       
             panel2.Controls.Add(form);
             form.Show();
         }

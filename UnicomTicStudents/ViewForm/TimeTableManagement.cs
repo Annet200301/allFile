@@ -29,13 +29,12 @@ namespace UnicomTicStudents.ViewForm
         }
 
         private void label2_Click(object sender, EventArgs e)
-        {// If RoomManagementForm does not need any parameters:
+        {
             var roomForm = new RoomForm();
             roomForm.TopLevel = false;
             roomForm.FormBorderStyle = FormBorderStyle.None;
             roomForm.Dock = DockStyle.Fill;
 
-            // Assuming you have a Panel named panelRoom on your main form
             Panelroom.Controls.Clear();
             Panelroom.Controls.Add(roomForm);
             roomForm.Show();
